@@ -1,0 +1,117 @@
+main {
+    display: grid;
+    justify-content: center;
+    margin-top: 100px;
+}
+.header {
+    border: 1px solid #dddddd;
+    width: 500px;
+    max-width: 100%;
+    height: 130px;
+    max-height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    max-width: 300px;
+    padding: 20px;
+}
+
+#Email {
+    grid-area: email;
+    justify-self: end;
+    margin: auto 0;
+}
+
+::placeholder {
+    color: #AAAAAA;
+}
+
+#input1 {
+    grid-area: input1;
+    justify-self: start;
+    margin: auto;
+    height: 20px;
+    width: 300px;
+    border: 1px solid #AAAAAA;
+}
+
+#Password {
+    grid-area: password;
+    justify-self: end;
+    margin: auto 0;
+}
+
+#input2 {
+    grid-area: input2;
+    justify-self: start;
+    margin: auto;
+    height: 20px;
+    width: 300px;
+    border: 1px solid #AAAAAA;
+}
+
+#login {
+    height: 132px;
+    border-left: 1px;
+    border-right: 1px;
+    border-top: 0;
+    border-bottom: 0;
+    border-style:  solid;
+    border-color: #dddddd;
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: 
+        "email input1"
+        "password input2"
+    ;
+}
+
+#login > p {
+    font-family: 'Spectral', serif;
+    font-weight: bold;
+    /* letter-spacing: -.5px; */
+    font-size: 15px;
+}
+
+
+button {
+    background-color: #e50034;
+    color: white;
+    border: none;
+    font-size: 16px;
+    border-radius: 3px;
+    height: 32px;
+    width: 80px;
+    grid-area: btn;
+    justify-self: center;
+    margin-top: 10px;
+}
+
+#Forgot {
+    grid-area: forgot;
+    justify-self: center;
+    margin-bottom: 0;
+    color: #e50034;
+}
+
+#Need {
+    grid-area: help;
+    justify-self: center;
+    margin-top: 0;
+    color: #e50034;
+}
+
+#interact {
+
+    border: 1px solid #dddddd;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: 
+        "forgot btn"
+        "help ."
+    ;
+}
